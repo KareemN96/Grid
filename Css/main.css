@@ -1,0 +1,578 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --h2_h3font: "Arvo", serif;
+    --h5_h6font: "Montserrat", sans-serif;
+    --p_a_font: "Open Sans", sans-serif;
+    --fir_color: rgb(159, 163, 167);
+    --sec_color: rgb(51, 51, 51);
+    --bg_color: #F7F8F9;
+    --a_color: #27b9c2;
+}
+
+h2,
+h3 {
+    font-family: var(--h2_h3font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--sec_color);
+}
+
+h5,
+h6 {
+    font-family: var(--h5_h6font);
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px;
+    color: var(--fir_color);
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: var(--p_a_font);
+    font-family: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 26px;
+    color: var(--fir_color);
+}
+
+a {
+    font-family: var(--p_a_font);
+    font-weight: 700;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+span {
+    font-family: var(--p_a_font);
+    font-size: 8px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+i {
+    color: #ffc80a;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(10, 125px);
+    grid-template-areas:
+        "iphone-6S iphone-6S rotary rotary"
+        "iphone-6S iphone-6S rotary rotary"
+        "iphone-6S iphone-6S rotary rotary"
+        "keyboard imac imac icloud"
+        "keyboard imac imac icloud"
+        "keyboard imac imac icloud"
+        "games-ourpasion muchbetter muchbetter icloud"
+        "games-ourpasion muchbetter muchbetter icloud"
+        "games-ourpasion muchbetter muchbetter icloud"
+        "twitter much-muchbetter vision vision"
+        "twitter much-muchbetter vision vision";
+}
+
+/* start Iphone */
+.iphone-6S {
+    grid-area: iphone-6S;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ip-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 15px;
+    padding-left: 30px;
+}
+
+.ip-img {
+    width: 60%;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.ip-img img {
+    width: 250px;
+}
+
+/* End Iphone */
+/* Start keyboard */
+.keyboard {
+    grid-area: keyboard;
+    background-color: #F05638;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.keyb-img {
+    width: 60%;
+}
+
+.keyb-img img {
+    width: 100%;
+}
+
+.keyb-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.keyb-content h2 {
+    font-weight: 700;
+    color: rgb(255, 251, 251);
+}
+
+.keyb-content a {
+    color: #ffc80a;
+    text-decoration: none;
+}
+
+/* End keyboard */
+/* start Rotary */
+.rotary {
+    grid-area: rotary;
+    background-color: var(--bg_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+}
+
+.rotary h2 {
+    width: 450px;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.rotary a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--a_color);
+}
+
+/* End Rotary */
+/* Start iCloud */
+.icloud {
+    grid-area: icloud;
+    background-color: #8F76BC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.ic_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #8166B0;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.ic_first span {
+    font-size: 10px;
+    line-height: 23px;
+    background-color: rgb(143, 118, 188, .5);
+    border-radius: 50px;
+    padding: 2px 15px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.ic_first img {
+    width: 250px;
+}
+
+.ic_first h5 {
+    color: #ffffff;
+}
+
+.ic_Sconed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    
+}
+
+.ic_Sconed h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #ffffff;
+
+}
+
+.ic_Sconed p {
+    padding: 0 40px;
+    color: #ffffff;
+}
+
+.ic_Sconed a {
+    background-color: #ffc80a;
+    color: black;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* End iCloud */
+/* start iMAC */
+.imac {
+    grid-area: imac;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imac_sec1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 5px;
+}
+
+.imac_sec1 img {
+    position: relative;
+    top: 52px;
+    left: -250px;
+    width: 400px;
+}
+
+.imac_sec2 {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.imac_sec2 a {
+    color: var(--a_color);
+    text-decoration: none;
+}
+
+.imac_sec2 i {
+    color: var(--a_color);
+}
+
+/* End iMAC */
+/* start Games */
+.games-ourpasion {
+    grid-area: games-ourpasion;
+    background-color: var(--bg_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.games-img {
+    width: 60%;
+    margin-right: 35px;
+}
+
+.games-img img {
+    width: 95%;
+}
+
+.games-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.games-content a {
+    color: var(--a_color);
+    text-decoration: none;
+}
+
+.games-content i {
+    color: var(--a_color);
+}
+
+/* End Games */
+/* start Much Better */
+.muchbetter {
+    grid-area: muchbetter;
+    background-color: #90B2B3;
+    background-image: url(../imgs/5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 35px;
+}
+
+.muchbetter h5 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: #FA684F;
+    padding: 2px 8px;
+    font-size: 8px;
+    color: #ffffff;
+    border-radius: 5PX;
+}
+
+.mbetter-content h2 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.mbetter-img {
+    width: 90%;
+    margin-right: 20%;
+}
+
+.mbetter-img img {
+    width: 100%;
+}
+
+/* End Much Better */
+/* Start Twitter */
+.twitter {
+    grid-area: twitter;
+    background-color: #38D5F4;
+    display: flex;
+    justify-content: center;
+}
+
+.twitter-content {
+    width: 70%;
+    background-color: #35CFED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 50px;
+}
+
+.twitter-content img {
+    width: 50px;
+}
+
+.twitter-content h2 {
+    color: #ffffff;
+}
+
+/* End Twitter */
+/* Start  Much Much Better*/
+.much-muchbetter {
+    grid-area: much-muchbetter;
+    background-color: var(--bg_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 10px;
+    padding: 30px 0;
+}
+
+.much-muchbetter h5 {
+    background-color: #7BC424;
+    padding: 1px 10px;
+    font-size: 8px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.much-muchbetter h2{
+    width: 60%;
+}
+
+/* End Much Much Better*/
+/* Start Vision */
+.vision {
+    grid-area: vision;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.vision-img {
+    width: 33%;
+}
+
+.vision-img img {
+    width:250px;
+}
+
+.vision-content h2 {
+    width: 60%;
+    color: #ffffff;
+}
+
+/* End Vision */
+@media (max-width: 990px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 80px);
+        grid-template-areas:
+            "rotary rotary"
+            "rotary rotary"
+            "rotary rotary"
+            "rotary rotary"
+            "iphone-6S iphone-6S"
+            "iphone-6S iphone-6S"
+            "iphone-6S iphone-6S"
+            "iphone-6S iphone-6S"
+            "keyboard games-ourpasion"
+            "keyboard games-ourpasion"
+            "keyboard games-ourpasion"
+            "keyboard games-ourpasion"
+            "imac imac"
+            "imac imac"
+            "imac imac"
+            "imac imac"
+            "twitter icloud"
+            "twitter icloud"
+            "twitter icloud"
+            "twitter icloud"
+            "muchbetter icloud"
+            "muchbetter icloud"
+            "muchbetter icloud"
+            "muchbetter icloud"
+            "much-muchbetter much-muchbetter"
+            "much-muchbetter much-muchbetter"
+            "vision vision"
+            "vision vision"
+            "vision vision";
+    }
+
+    .rotary {
+        row-gap: 10px;
+    }
+
+    .rotary h2 {
+        font-size: 35px;
+        line-height: 49px;
+    }
+
+    .ip-content {
+        width: 50%;
+    }
+
+    .ip-img {
+        padding-top: 30px;
+    }
+
+    .ip-img img {
+        width: 200px;
+    }
+    .keyb-img {
+        width:250px;
+    }
+    .imac_sec1 {
+        width: 50%;
+        padding-left: 50px;
+        row-gap: 3px;
+    }
+    .games-img {
+        width: 250px;
+    }
+
+    .imac_sec1 img {
+        top: 16px;
+        left: -270px;
+        width: 400px;
+    }
+
+    .twitter {
+        align-items: center;
+    }
+
+    .icloud {
+        row-gap: 20px;
+        padding: 30px;
+    }
+
+    .ic_first {
+        padding: 30px 50px;
+    }
+    .muchbetter{
+        justify-content:end;
+        row-gap: 100px;
+    }
+    .much-muchbetter{
+        padding-bottom: 50px;
+    }
+
+    .vision-content h2 {
+        width:70%;
+    }
+    .vision-img {
+        width: 60%;
+    }
+    /* .vision-img {
+        width: 60%;
+    } */
+}
+
+@media (min-width:991px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(10, 125px);
+        grid-template-areas:
+            "iphone-6S iphone-6S rotary rotary"
+            "iphone-6S iphone-6S rotary rotary"
+            "iphone-6S iphone-6S rotary rotary"
+            "keyboard imac imac icloud"
+            "keyboard imac imac icloud"
+            "keyboard imac imac icloud"
+            "games-ourpasion muchbetter muchbetter icloud"
+            "games-ourpasion muchbetter muchbetter icloud"
+            "games-ourpasion muchbetter muchbetter icloud"
+            "twitter much-muchbetter vision vision"
+            "twitter much-muchbetter vision vision";
+    }
+}
